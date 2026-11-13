@@ -37,7 +37,7 @@ trained models, hardware design files and training dataset.
 | `datasets/` | The 633-image training dataset (documentation here, files in a Release) |
 | `hardware/kicad/` | KiCad files and Gerbers for the Gimbal Controller Box and Lid circuit boards |
 | `hardware/3d-printing/` | STL files for the 3D-printed parts (print in PETG) |
-| `docs/` | The Build Book and original drawings |
+| `docs/` | Original drawings (the Build Book itself is on the Releases page) |
 | `LICENSES/`, `LICENSE`, `NOTICE` | Licensing and credits |
 
 ## Downloads (large files)
