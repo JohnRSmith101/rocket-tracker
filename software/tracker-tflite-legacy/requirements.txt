@@ -1,0 +1,7 @@
+# Python packages for the legacy TensorFlow Lite tracker.
+# Versions are not pinned yet. Run `pip freeze` on a working Pi to record exact versions.
+tflite-runtime
+opencv-python
+numpy
+pygame
+pyserial

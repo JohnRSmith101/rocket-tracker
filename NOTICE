@@ -1,0 +1,47 @@
+Rocket Tracker
+Copyright 2026 John R. Smith
+
+THIRD-PARTY MATERIAL
+
+Ultralytics YOLO  (https://github.com/ultralytics/ultralytics)
+  Licensed under AGPL-3.0. Used by the YOLO tracking program. Models
+  trained with it are also provided under AGPL-3.0.
+
+Train-and-Deploy-YOLO-Models by Evan Juras, EJ Technology Consultants /
+EdjeElectronics  (https://github.com/EdjeElectronics/Train-and-Deploy-YOLO-Models)
+  Licensed under Apache-2.0. The YOLO models were trained with the
+  Google Colab notebook from this project.
+
+TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi by Evan Juras,
+EJ Technology Consultants / EdjeElectronics
+  (https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi)
+  Licensed under Apache-2.0. Parts of software/tracker-tflite-legacy are
+  adapted from its example scripts, which are in turn based on
+  TensorFlow Lite examples (Copyright The TensorFlow Authors, Apache-2.0).
+
+PiMediapipeObjectDetection by Ramaditya Kotha (RamadityaK)
+  (https://github.com/RamadityaK/PiMediapipeObjectDetection)
+  MIT License, Copyright (c) 2024 RamadityaK. Used as a starting point for
+  running object detection on the Raspberry Pi; software/tracker-tflite-legacy
+  was developed with reference to it. The MIT License text is in
+  LICENSES/MIT-RamadityaK.txt.
+
+MediaPipe and MediaPipe Model Maker  (https://github.com/google-ai-edge/mediapipe)
+  Copyright 2023 The MediaPipe Authors. Licensed under Apache-2.0. The
+  December 2024 model in models/mediapipe-dec2024 was trained with the
+  MediaPipe Model Maker object detection customization notebook, starting
+  from a pre-trained MobileNetV2 base model.
+
+LIBRARIES USED BUT NOT INCLUDED IN THIS PROJECT
+  Arduino (install with the Arduino Library Manager):
+    QuickPID, by David Lloyd           MIT License
+    movingAvg, by Jack Christensen     GNU GPL v3.0
+      Note: movingAvg is GPL-3.0. The Arduino sketches in this project do
+      not include its code, but firmware built from them contains it. If you
+      distribute compiled firmware, follow the GPL-3.0 for that firmware.
+  Python: OpenCV, NumPy, pygame, pySerial, ncnn, tflite-runtime
+    Each is licensed by its own authors; see their projects for terms.
+
+THE ALERT SOUND
+  software/tracker-yolo/alert.wav and software/tracker-tflite-legacy/alert.wav
+  were synthesized for this project. They are released with the software.

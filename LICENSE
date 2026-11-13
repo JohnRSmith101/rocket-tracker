@@ -1,0 +1,63 @@
+Rocket Tracker
+Copyright 2026 John R. Smith
+
+Rocket Tracker is open source. Different parts of the project use
+different licenses. This file explains which license applies where.
+The full text of each license is in the LICENSES/ folder.
+
+--------------------------------------------------------------------
+1. SOFTWARE  -->  Apache License 2.0   (LICENSES/Apache-2.0.txt)
+--------------------------------------------------------------------
+- Arduino sketches (software/gimbal-controller)
+- Python tracking program for the TensorFlow Lite model
+  (software/tracker-tflite-legacy)
+- The TensorFlow Lite and MediaPipe models and label maps
+  (models/tflite-ssd-oct2024, models/mediapipe-dec2024)
+- alert.wav (the alert sound, synthesized for this project)
+
+--------------------------------------------------------------------
+2. YOLO TRACKER AND YOLO MODEL  -->  GNU AGPL v3   (LICENSES/AGPL-3.0-only.txt)
+--------------------------------------------------------------------
+- software/tracker-yolo (Python program)
+- models/yolo (trained YOLO weights and training results)
+
+Reason: this part uses Ultralytics YOLO, which is licensed under the
+AGPL-3.0. Software that uses it, and models trained with it, must be
+shared under the same license. The rest of the project is not affected.
+
+--------------------------------------------------------------------
+3. HARDWARE, DOCUMENTATION AND DATASETS
+   -->  Creative Commons Attribution-ShareAlike 4.0 International
+        (LICENSES/CC-BY-SA-4.0.txt)
+--------------------------------------------------------------------
+- The Rocket Tracker Build Book (PDF and Word)
+- KiCad schematics, PCB layouts and Gerber files (hardware/kicad)
+- 3D-printing (STL) files (hardware/3d-printing)
+- Photographs, drawings and diagrams created by the author
+- Training datasets created by the author (datasets)
+
+Images of purchased parts, and other images that come from third
+parties, are NOT covered by this license. See the Build Book.
+
+--------------------------------------------------------------------
+THIRD-PARTY MATERIAL
+--------------------------------------------------------------------
+This project uses or adapts work by others. Those parts keep their
+original licenses. See the NOTICE file.
+
+--------------------------------------------------------------------
+EARLIER LICENSE
+--------------------------------------------------------------------
+Earlier copies of these materials were released under the "Rocket
+Tracker Personal and Noncommercial Use License Version 1.0". For this
+release, that license is replaced by the licenses above. People who
+already received copies under the earlier license keep the rights it
+gave them.
+
+--------------------------------------------------------------------
+NO WARRANTY; BUILD AT YOUR OWN RISK
+--------------------------------------------------------------------
+Building and operating motorized equipment and optics involves risk of
+injury and property damage, including eye damage if optics are pointed
+at the sun. The project is provided "as is", without warranty, as
+described in each license above.

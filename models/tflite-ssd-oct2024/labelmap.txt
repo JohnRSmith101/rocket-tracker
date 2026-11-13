@@ -1,0 +1,8 @@
+staging
+blob
+plume
+backlit_plume
+jellyfish
+contrail
+engines
+point

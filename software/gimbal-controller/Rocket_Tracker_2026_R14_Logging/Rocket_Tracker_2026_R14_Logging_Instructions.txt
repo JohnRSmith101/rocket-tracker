@@ -1,0 +1,71 @@
+R14 LOGGING INSTRUCTIONS — ARDUINO DUE / MACBOOK AIR
+=========================================================
+
+Sketch:
+Rocket_Tracker_2026_R14_Logging.ino
+
+QUICKPID LIBRARY
+----------------
+QuickPID and movingAvg must already be installed (Arduino IDE: Sketch > Include Library > Manage Libraries)
+
+PROCEDURE
+--------------
+DO NOT USE ARDUINO IDE!  USE ARDUINO 1.8.13
+
+1. Upload Arduino sketch
+2. Open Arduino Serial Monitor for the Due Programming Port.
+3. Set Serial Monitor to 115200 baud.
+4. START RPI TRACKING CAMERA
+5. On Arduino, Type:
+
+     C
+
+   and send it. You should see:
+
+     PID log cleared.
+
+
+6.On Raspberry Pi, Type r to begin recording (both Video and data logging)
+
+7. Start Laser & Conduct the test.
+8. When enough sweeps have been completed, turn the laser OFF.
+
+9. On Raspberry Pi, Type r to end recording (both Video and data logging)
+
+10. DO NOT reset the Arduino, disconnect power, unplug the USB cable, or upload
+   another sketch before retrieving the RAM data.
+
+11. In Serial Monitor type:
+
+     D
+
+   and send it.
+12. Wait for the complete dump. It begins with:
+
+     BEGIN_LOG
+
+    and ends with:
+
+     END_PID_LOG records=...
+
+13. Open TextEdit and paste the Arduino data into a plain-text document on your Mac and save it.       A filename such as the following is suitable:
+
+     Data Log.txt
+
+    or:
+
+    Data Log.csv
+
+What Arduino data is recorded
+
+time
+Filtered AZ and ELtarget velocity in deg/sec received from RPi
+
+Csv delimited.
+
+14. Use excel to open the file.  All the data may be in the first column
+Just select (highlight) the column, the select Data/Text to columns
+And choose comma delimited.
+Save as .xlsx file
+
+

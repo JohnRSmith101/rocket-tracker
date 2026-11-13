@@ -1,0 +1,11 @@
+# Files that should never be uploaded to GitHub
+.DS_Store
+__pycache__/
+*.pyc
+# KiCad backup and lock files
+*-backups/
+*.bak
+*-bak
+_autosave-*
+*.lck
+fp-info-cache

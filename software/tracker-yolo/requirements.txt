@@ -1,0 +1,8 @@
+# Python packages for the YOLO tracker (Raspberry Pi 5, Raspberry Pi OS "Bookworm").
+# Versions are not pinned yet. Run `pip freeze` on a working Pi to record exact versions.
+ultralytics
+ncnn
+opencv-python
+numpy
+pygame
+pyserial
